@@ -1,4 +1,4 @@
-package br.com.projeto.conecta.mail.domain;
+package br.com.projeto.conectamail.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

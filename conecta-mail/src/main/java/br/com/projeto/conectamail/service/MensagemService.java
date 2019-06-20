@@ -1,4 +1,4 @@
-package br.com.projeto.conecta.mail.service;
+package br.com.projeto.conectamail.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import br.com.projeto.conecta.mail.domain.Mensagem;
+import br.com.projeto.conectamail.domain.Mensagem;
 
 @Component
 @EnableScheduling

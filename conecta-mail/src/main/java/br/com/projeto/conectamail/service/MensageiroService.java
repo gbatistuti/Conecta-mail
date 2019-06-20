@@ -1,11 +1,11 @@
-package br.com.projeto.conecta.mail.service;
+package br.com.projeto.conectamail.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
-import br.com.projeto.conecta.mail.domain.Mensagem;
+import br.com.projeto.conectamail.domain.Mensagem;
 
 @Component
 public class MensageiroService {
