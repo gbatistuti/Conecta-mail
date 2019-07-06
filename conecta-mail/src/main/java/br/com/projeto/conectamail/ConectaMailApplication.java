@@ -9,5 +9,6 @@ public class ConectaMailApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConectaMailApplication.class, args);
 		
+		
 	}
 }

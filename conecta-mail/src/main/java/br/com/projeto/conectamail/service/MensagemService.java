@@ -30,17 +30,14 @@ public class MensagemService {
 		
 		ResponseEntity<Mensagem> resposta = this.restTemplate.getForEntity(url, Mensagem.class);
 		
-		System.out.println("TA RODANDO");
 		if (resposta.hasBody()) {
-			System.out.println("------TEM CORPO-------");
 			Mensagem msg = resposta.getBody();
 			try {
-				System.out.println("------TRY-------");
 				mensageiroService.enviar(msg);
-				System.out.println("---------------DEU BOM------------");
+				System.out.println("Email enviado para: " + msg.getDestinatarios());
 				ResponseEntity.ok("Mensagem enviada com sucesso!");
 			} catch (Exception e) {
-				System.out.println("------CATCH-------");
+				System.out.println("ERRO");
 				ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro interno no servidor");
 			}
 		}
